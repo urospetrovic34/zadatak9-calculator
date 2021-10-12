@@ -39,31 +39,26 @@ const calculate = () => {
     {
         input.value = parseFloat(numbers[0]) + parseFloat(numbers[1])
         input.value = input.value.replaceAll(".",",")
-        input.value = input.value.replace(/\B(?=(\d{3})+(?!\d))/g, ".")
     }
     else if(sign[0]==='-')
     {
         input.value = parseFloat(numbers[0]) - parseFloat(numbers[1])
         input.value = input.value.replaceAll(".",",")
-        input.value = input.value.replace(/\B(?=(\d{3})+(?!\d))/g, ".")
     }
     else if(sign[0]==='x')
     {
         input.value = parseFloat(numbers[0]) * parseFloat(numbers[1])
         input.value = input.value.replaceAll(".",",")
-        input.value = input.value.replace(/\B(?=(\d{3})+(?!\d))/g, ".")
     }
     else if(sign[0]==='/')
     {
         input.value = parseFloat(numbers[0]) / parseFloat(numbers[1])
         input.value = input.value.replaceAll(".",",")
-        input.value = input.value.replace(/\B(?=(\d{3})+(?!\d))/g, ".")
     }
     if(input.value==="Infinity")
     {
         input.value = "Cannot divide by zero"
         input.value = input.value.replaceAll(".",",")
-        input.value = input.value.replace(/\B(?=(\d{3})+(?!\d))/g, ".")
     }
 }
 
